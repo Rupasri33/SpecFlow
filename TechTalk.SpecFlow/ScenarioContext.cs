@@ -62,7 +62,8 @@ namespace TechTalk.SpecFlow
         public ScenarioExecutionStatus ScenarioExecutionStatus { get; internal set; }
         internal List<string> PendingSteps { get; }
         internal List<StepInstance> MissingSteps { get; }
-        internal Stopwatch Stopwatch { get; }
+        public Stopwatch Stopwatch { get; }
+        
 
         private readonly ITestObjectResolver testObjectResolver;
 
